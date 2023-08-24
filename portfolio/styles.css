@@ -1,0 +1,652 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db; 
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Intro Section */
+  #intro {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .intro-content {
+    flex: 1;
+  }
+  
+  .intro-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    font-family: "Times New Roman", serif;
+  }
+  
+  .intro-content p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+    margin-left: 5rem;
+    font-family: "Georgia", serif;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 5rem;
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .social-icons a i {
+    margin-right: 8px;
+  }
+  
+  .buttons {
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+  }
+  
+  .contact-button,
+  .resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #2980b9; /* Different blue color for buttons */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contact-button:hover,
+  .resume-button:hover {
+    background-color: #1a5276; /* Darker shade for hover effect given */
+  }
+  
+  .logo img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .intro-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .intro-image img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  
+  
+  /* Here are some responsive Styles that i have used */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    nav {
+      margin-top: 10px;
+    }
+    
+    .intro {
+      flex-direction: column;
+    }
+    
+    .intro-content,
+    .intro-image {
+      text-align: center;
+    }
+    
+    .buttons {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+ 
+  .skills-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/back.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+  }
+  #skills {
+    position: relative;
+    padding: 4rem 0;
+    display: flex; 
+    align-items: center;
+    color: white;
+    background-image: url('images/back.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .skills-content {
+    flex: 1; 
+    max-width: 800px;
+    margin-right: 20px;
+    background-color:black
+    padding 20px;
+  }
+  
+  .skills-heading {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: "Arial", sans-serif;
+  }
+  
+ 
+  .image-section {
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+  
+  .left-image {
+    max-width: 50%; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+  #proficiency {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+    color: black;
+  }
+  
+  .proficiency-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .proficiency-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+  }
+  
+  .proficiency-categories {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .proficiency-category {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .proficiency-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .proficiency-level {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  #opensource {
+    text-align: center;
+    padding: 4rem 0;
+    background-image: url('images/bg.webp'); 
+  }
+  
+  .opensource-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .opensource-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: "Arial", sans-serif;
+    color: #333; 
+    transition: color 0.3s; 
+  }
+  
+  .opensource-heading:hover {
+    color: #3498db; 
+  }
+  
+  .project-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .project-block {
+    flex: 1;
+    padding: 20px;
+    background-color: whitesmoke;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  }
+  
+  .project-block.active {
+    background-color: #2980b9;
+    color: white;
+    box-shadow:  6px 24px rgba(0, 0, 0, 0.3); 
+  
+  .project-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer; 
+  }
+  
+  
+  .project-block h3 {
+    margin-bottom: 10px;
+  }
+  
+  
+  .project-block p {
+    margin-bottom: 10px;
+    text-align: left; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+  }
+  
+  
+  .project-block p:last-child {
+    margin-bottom: 20px;
+  }
+  
+  .project-block p,
+  .project-block h3 {
+    color: #333; 
+  }
+  
+  .project-block h2 {
+    color: #333; 
+    font-size: small;
+    text-align: right;
+  }
+  
+  .stars {
+    color: #f39c12;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .project {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; 
+    color: white; 
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+  }
+  
+  .project:hover {
+    background-color: #2980b9; /* Here background color changed by hover*/
+  }
+
+
+  #achievements {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #f9f9f9; 
+  }
+  
+  .achievements-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .achievements-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: "Arial", sans-serif;
+    color: #333; 
+  }
+  
+  .achievement-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .achievement-block {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .achievement-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .achievement-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .achievement-description {
+    color: #777;
+  }
+  
+
+  .po{
+    margin-top: 20px;
+    text-align: center;
+
+  }
+
+
+  #blogs {
+    text-align: center;
+    padding: 50px;
+    background-image: url('images/bruh.jpg.crdownload'); 
+    background-size: cover;
+  }
+  
+  .blogs-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .blogs-heading {
+    color: #fff; 
+  }
+  
+  .blog-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .blog-block {
+    margin-top: 30px;
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .blog-block:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .blog-block h3 {
+    color: #444;
+  }
+  
+  .blog-block p {
+    margin-top: 20px;
+    color: #666;
+  }
+  
+
+  #talks {
+    text-align: left;
+    padding: 50px;
+    background-size: cover;
+    color: whitesmoke;
+  }
+
+  .talks-content {
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+
+  .talk-table {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: linear-gradient(185deg, #2980b9 50%, #fff 50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: skew(-20deg);
+  }
+
+  .talk-info {
+    text-align: center;
+    padding: 20px;
+    transform: skew(20deg);
+  }
+
+  .talk-title {
+    color: black;
+    margin: 0;
+  }
+
+  .talk-year {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-style:unset;
+    margin-top: 10px;
+  }
+
+  .talk-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 2px;
+  }
+
+  .talk-button {
+    
+    background-color: #3498db;;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .talk-button:hover {
+    background-color: #0056b3;
+  }
+
+  #contact {
+    text-align: left;
+    padding: 50px;
+    background-image: url('images/bg.webp');
+    color: #333;
+    font-family: sans-serif;
+  }
+  
+  .contact-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .content-column {
+    padding: 20px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+  }
+  
+  .image-column {
+    text-align: right;
+    padding: 20px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    vertical-align: top;
+  }
+  
+  .contact-heading {
+    color: #333;
+  }
+  
+  .contact-paragraph {
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  .about-me h3 {
+    color: #333;
+  }
+  
+  .location {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .location-icon {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .open-opportunities {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    display: flex;
+    font-size: 24px;
+    color: #007bff;;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #0056b3;
+  }
+  
+  .profile-image {
+    width: 250px;
+    height: 250px; 
+    border-radius: 50%;
+    margin-top: 30px;
+  }
+
+  .portfolio-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 40px;
+  }
+  
+  .contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .social-links {
+    flex: 1;
+  }
+  
+  .social-links h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    font-size: 28px;
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #007bff;
+  }
+  
+}

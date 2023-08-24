@@ -1,0 +1,217 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    background-image: url('images/makeup.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color:silver;
+    margin-right: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 25px;
+}
+
+.nav-links a {
+    font-size: 20px;
+    font-weight: initial;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6961;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: silver;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6961;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff4d4d;
+}
+
+.sale-btn {
+    background-color: #ff0000;
+    margin-left: 10px;
+}
+
+.search-sale {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-sale input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-sale button {
+    padding: 10px 20px;
+    background-color: #ff6961;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.offer {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 0;
+    color: #ff6961;
+    font-weight: bold;
+    border-top: 2px solid #ff6961;
+}
+
+
+
+
+.slider-container {
+    margin: 40px auto;
+    max-width: 800px;
+    overflow: hidden;
+    background-color: #f9f9f9; 
+    padding: 20px; 
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%; 
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ff6961;
+    background-color: whitesmoke;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.featured-brands {
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+    font-size: large;
+    font-weight: 150;
+}
+
+.featured-brands h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brand-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.brand {
+    flex: 0 0 calc(50% - 10px);
+    border: 1px solid #ff6961;
+    padding: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background-color:#ff6961;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 40px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links img {
+    margin-right: 10px;
+}
